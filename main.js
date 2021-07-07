@@ -181,11 +181,12 @@ alert(accumulator.value);
 
 */
 
-//problem11
+//07-07-2021
+/*problem11
 
 var numbers = [1, 1, 1, 0, 0, 0, 0];
-//alert(numbers[1]);
-//shifting the array value
+
+//shifting the array element in right direction
 let len = numbers.length;
 alert("initial input :" + " " + numbers)
 let choice;
@@ -199,3 +200,97 @@ do {
     choice = +prompt("want to display next output enter 1 or 0");
 }
 while (choice != 0);
+
+*/
+
+/*problem12
+
+function camelize(str) {
+    var temp = str.split('');
+    for (var i = 0; i < temp.length; i++) {
+        if (temp[i] == "-") {
+            temp[i + 1] = temp[i + 1].toUpperCase();
+            temp.splice(i, 1)
+        }
+    }
+    str = temp.join('');
+
+    return str
+
+};
+
+alert(camelize("background-color"));
+alert(camelize("list-style-image"));
+alert(camelize("-webkit-transition"));
+
+*/
+
+/*problem13
+
+function filterRange(arr, a, b) {
+    let array = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= a && arr[i] <= b) {
+            array.push(arr[i]);
+        }
+    }
+    return array
+}
+
+let arr = [10, 100, 40, 70, 30, 20, 30, 10];
+a = +prompt("Enter the first value of range");
+b = +prompt("Enter the second value of range");
+let filtered = filterRange(arr, a, b);
+alert(filtered); // 3,1 (matching values)
+alert(arr); // 5,3,8,1 (not modified)
+
+*/
+/*problem14
+
+function filterRangeInPlace(arr, a, b) {
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < a || arr[i] > b) {
+            arr.splice(i, 1);
+        }
+    }
+
+}
+
+let arr = [5, 3, 8, 1];
+a = +prompt("Enter the first value of range");
+b = +prompt("Enter the second value of range");
+filterRangeInPlace(arr, a, b);
+alert(arr); 
+
+*/
+
+/*problem15
+let arr = [5, 2, 1, -10, 8];
+arr.sort();
+arr.reverse();
+alert(arr)
+
+//or
+
+//let array = [5, 2, 1, -10, 8];
+//array.sort(function (a, b) { return b - a });
+//alert(array)
+
+*/
+
+/*problem16
+
+function copySorted(arr) {
+    let array = arr.slice();
+    array.sort(function (a, b) { return a.length - b.length });
+    return array;
+}
+
+let arr = ["HTML", "JavaScript", "CSS"];
+
+let sorted = copySorted(arr);
+alert(sorted);
+alert(arr); 
+
+*/
