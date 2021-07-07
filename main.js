@@ -294,3 +294,93 @@ alert(sorted);
 alert(arr); 
 
 */
+
+//problem17
+
+
+/*problem18
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let users = [john, pete, mary];
+
+let names = users.map(user => user.name);
+
+alert(names);
+
+*/
+
+/*problem19
+
+let john = { name: "John", surname: "Smith", id: 1 };
+let pete = { name: "Pete", surname: "Hunt", id: 2 };
+let mary = { name: "Mary", surname: "Key", id: 3 };
+
+let users = [john, pete, mary];
+
+let usersMapped = users.map(function (user) {
+    return {
+        fullName: `${user.name}  ${user.surname}`,
+        id: `${user.id}`
+    };
+});
+
+alert(usersMapped[0].id)
+alert(usersMapped[0].fullName)
+
+*/
+
+/*problem20
+
+function sortByName(a, b) {
+    if (a.name < b.name) {
+        return -1;
+    }
+    if (a.name > b.name) {
+        return 1;
+    }
+    return 0;
+}
+
+let john = { name: "John", age: 25 };
+let pete = { name: "Pete", age: 30 };
+let mary = { name: "Mary", age: 28 };
+
+let users = [john, pete, mary];
+
+users.sort(sortByName);
+
+alert(users[1].name);
+
+*/
+
+//problem21
+
+function unique(arr) {
+    let array = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (!(array.includes(arr[i]))) {
+            array.push(arr[i]);
+        }
+    }
+    return array;
+}
+
+//or
+//function unique(arr) {
+//  return Array.from(new Set(arr));
+//}
+//
+//does the same thing
+//
+
+let strings = ["Hare", "Krishna", "Hare", "Krishna",
+    "Krishna", "Krishna", "Hare", "Hare", ":-O"
+];
+
+alert(unique(strings));
+
+
+
