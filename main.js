@@ -356,7 +356,7 @@ alert(users[1].name);
 
 */
 
-//problem21
+/*problem21
 
 function unique(arr) {
     let array = [];
@@ -381,6 +381,44 @@ let strings = ["Hare", "Krishna", "Hare", "Krishna",
 ];
 
 alert(unique(strings));
+
+*/
+
+/*problem22  ... object destructuring 
+
+let user = { name: "John", years: 30, isAdmin: 'true' };
+//let user = { name: "John", years: 30 };//default case
+let { name: name, years: age, isAdmin = 'false' } = user;
+alert(name);
+alert(age);
+alert(isAdmin);
+
+*/
+
+//problem23 
+function topSalary(salaries) {
+    if (Object.keys(salaries).length === 0) {
+        return null;
+    }
+    else {
+        const max = 0;
+
+    }
+}
+
+
+
+
+
+let salaries = {
+    "John": 100,
+    "Pete": 300,
+    "Mary": 250
+};
+
+let [name, salary] = Object.entries(salaries);
+
+alert(salary);
 
 
 
