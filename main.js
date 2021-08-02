@@ -395,30 +395,7 @@ alert(isAdmin);
 
 */
 
-//problem23 
-function topSalary(salaries) {
-    if (Object.keys(salaries).length === 0) {
-        return null;
-    }
-    else {
-        const max = 0;
 
-    }
-}
-
-
-
-
-
-let salaries = {
-    "John": 100,
-    "Pete": 300,
-    "Mary": 250
-};
-
-let [name, salary] = Object.entries(salaries);
-
-alert(salary);
 
 
 
