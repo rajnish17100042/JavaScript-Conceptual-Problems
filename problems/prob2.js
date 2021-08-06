@@ -1,15 +1,5 @@
-let sum = 0;
+// Write the code to sum all salaries and store in the variable sum
 
-let salaries = {
-    John: 100,
-    Ann: 160,
-    Pete: 130
-}
-console.log(sumofsalaries(salaries));
-
-salaries = {};
-
-console.log(sumofsalaries(salaries));
 
 function sumofsalaries(salaries) {
     if (Object.keys(salaries).length === 0) {
@@ -24,3 +14,19 @@ function sumofsalaries(salaries) {
 
     return sum;
 }
+
+
+
+let sum = 0;
+
+let salaries = {
+    John: 100,
+    Ann: 160,
+    Pete: 130
+}
+console.log(sumofsalaries(salaries));
+
+salaries = {};
+
+console.log(sumofsalaries(salaries));
+
