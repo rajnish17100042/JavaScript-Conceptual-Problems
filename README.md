@@ -1,1 +1,1 @@
-# javascript_assignment
+This repository contains conceptual problem of JavaScript which brush up the JavaScript concept.
